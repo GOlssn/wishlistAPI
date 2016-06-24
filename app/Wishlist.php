@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Wishlist extends Model
 {
     public function items() {
-        return $this->belongsToMany(App\Item)->withTimestamps();
+        return $this->belongsToMany('App\Item')->withTimestamps();
     }
 }
