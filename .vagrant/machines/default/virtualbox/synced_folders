@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/wishlistapi":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/wishlistapi","hostpath":"D:/xampp/htdocs/wishlistAPI","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"D:/xampp/htdocs/wishlistAPI","disabled":false,"__vagrantfile":true}}}
