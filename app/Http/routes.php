@@ -18,5 +18,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'api/v1'], function() {
     Route::get('/wishlist/{wishlist}', 'WishlistController@show');
     Route::get('/item/{item}', 'ItemController@show');
+    Route::get('/item/suggest/{name}', 'ItemController@suggest');
     Route::post('/item', 'ItemController@store');
+    Route::post('/wishlist', 'WishlistController@store');
 });

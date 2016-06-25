@@ -23,4 +23,14 @@ class ItemController extends Controller
 
         return response()->json($item);
     }
+
+    public function suggest($name) {
+        $items = \DB::table('items')->select('name')->where('name', 'LIKE', '%' . $name . '%')->get();
+
+        if(count($items) == 0) {
+            return response()->json(['message' => 'No item matches.']);
+        } 
+
+        return response()->json($items);
+    }
 }
